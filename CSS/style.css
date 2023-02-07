@@ -49,17 +49,33 @@ table {
 
 .trinket-image {
     width: 500px;
-	height: 500px;
+	padding-right: 20px;
 }
 
 h3 {
 	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
 }
 
 h4 {
 	font-size: 20px;
+	font-family: 'Itim', cursive;
 }
 
 .tag {
 	background-color: red;
+	font-family: 'Itim', cursive;
+}
+
+p {
+	font-family: 'Itim', cursive;
+}
+
+.item-information {
+	display:flex;
+}
+
+#container {
+	display:grid;
+	grid-template-columns: 50% 50% 50% 50%;
 }
