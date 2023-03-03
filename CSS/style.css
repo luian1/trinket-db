@@ -48,8 +48,10 @@ table {
 }
 
 .trinket-image {
-    width: 500px;
-	padding-right: 20px;
+	max-width: 33%;
+    width: auto;
+	height: auto;
+	padding-top: 20px;
 }
 
 h3 {
@@ -72,10 +74,11 @@ p {
 }
 
 .item-information {
-	display:flex;
+	display:block;
+	float:left;
 }
 
 #container {
 	display:grid;
-	grid-template-columns: 50% 50% 50% 50%;
+	grid-template-columns: 50% 50%;
 }
