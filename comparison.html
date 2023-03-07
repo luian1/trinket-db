@@ -7,6 +7,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mochiy+Pop+One&family=Rampart+One&family=Reggae+One&family=Sawarabi+Mincho&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/mainstyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,30 +22,34 @@
         <li><a href="comparison.html" class="active">Comparisons</a></li>
     </ul>
 </header>
+
 <section id="list">
 
-    <body id="compare">
+    <body id="compare" style="background-image:url(images/site/bg.jpg);">
         <div id="sideBar"></div>
         <div id="sideBar2"></div>
-        <h1 class="ENlist">English</p>
-            <h1 class="JPlist">Japanese</p> <br>
-                <h1 id="ex0" class="explain">Explanations (click the symbols to toggle explanations)</h1>
-                <image src="images/site/brush.png" style=""></image>
-                <h1 id="firstPoint">General Sentence Structure</h1>
+        <div id="enBox" style="margin-left:21vw;margin-top:-1vw;width:18vw;height:100%;border-radius:5px;"></div>
+        <div id="jpBox" style="margin-left:42vw;margin-top:-1vw;width:18vw;height:100%;border-radius:5px;"></div>
+        <h1 class="ENlist outlight">English 英語</p>
+            <h1 class="JPlist outline">Japanese 日本語</p>
+                <h1 id="ex0" class="explain outline" style="color:aliceblue">Explanations (click the symbols to toggle explanations)</h1>
+                <div class="txtBox" style="margin-left:4.2vw;margin-bottom:-6.8vw;width:60vw;height:7vh;border-radius:5px;"></div>
+                <h1 id="firstPoint"><span>Sentence Structure<h1 class="jp"><span>構文</span></h1></span></h1>
                 <p class="ENlist">Sentences are Subject > Verb > Object</p>
                 <p class="JPlist">Sentences are Subject > Object > Verb</p>
                 <h1 id="ex1" class="explain" onmousedown="showEx()">+</h1>
-                <p id="exp1" class="explain" hidden>Due to the different sentence structures, reading sentences that
+                <p id="exp1" class="explain" style="color:aliceblue;padding-bottom:2em;" hidden>Due to the different sentence structures, reading sentences that
                     contradict rules you've followed your whole life may throw you off. This may not seem too horrible
                     if you get used to it, but this is just the general structure. Many of the following points also tie
                     into sentence structure, but to start off, this is just the differences on a general level.
                 </p>
 
-                <h1 class="listPoint">Context</h1>
+                <div class="txtBox" style="margin-left:4.2vw;margin-bottom:-6.8vw;width:60vw;height:10.5vh;border-radius:5px;"></div>
+                <h1 class="listPoint"><span>Context<h1 class="jp"><span>文脈</span></h1></span></h1>
                 <p class="ENlist">Context isn't necessarily needed to understand sentences</p>
                 <p class="JPlist">Context is often crucial to understanding sentences</p>
                 <h1 id="ex2" class="explain" onmousedown="showEx()">+</h1>
-                <p id="exp2" class="explain" hidden>Japanese is a very contextual language in practice. Like in English,
+                <p id="exp2" class="explain" style="color:aliceblue;padding-bottom:2em;" hidden>Japanese is a very contextual language in practice. Like in English,
                     there are many similar sounding words that when spoken only make sense with context. For reasons
                     that will be covered later, there are far more similar words in Japanese than in English. This isn't
                     even the main point to be made here; tieing into the previous comparison, the subject is often
@@ -53,11 +59,12 @@
                     already brought up.
                 </p>
 
-                <h1 class="listPoint">Particles</h1>
+                <div class="txtBox" style="margin-left:4.2vw;margin-bottom:-6.8vw;width:60vw;height:7vh;border-radius:5px;"></div>
+                <h1 class="listPoint"><span>Particles<h1 class="jp"><span>助詞</span></h1></span></h1>
                 <p class="ENlist">Important to use</p>
                 <p class="JPlist">Vital to understand, many different applications</p>
                 <h1 id="ex3" class="explain" onmousedown="showEx()">+</h1>
-                <p id="exp3" class="explain" hidden>Japanese particles are very different. They can directly mean
+                <p id="exp3" class="explain" style="color:aliceblue;padding-bottom:2em;" hidden>Japanese particles are very different. They can directly mean
                     something in English, sometimes the meaning changes
                     based on context, or they can just be "markers". The first particle you learn <span
                         class="jp">は</span><sup>ha</sup> ('ha', but pronounced as 'wa'
@@ -82,12 +89,13 @@
                         class="jp">ね</span><sup>ne</sup> respectively that also go at the end of a sentence.
                 </p>
 
-                <h1 class="listPoint">Formalities</h1>
+                <div class="txtBox" style="margin-left:4.2vw;margin-bottom:-6.8vw;width:60vw;height:10.5vh;border-radius:5px;"></div>
+                <h1 class="listPoint"><span>Formalities<h1 class="jp"><span>格式</span></h1></span></h1>
                 <p class="ENlist">While it is good practice, politeness isn't exactly required</p>
                 <p class="JPlist">Formalities are deeply rooted into Japanese culture</p>
                 <h1 id="ex4" class="explain" onmousedown="showEx()">+</h1>
                 <img id="cHon" class="chart" src="images/site/honor.jpg" alt="Honorifics chart" hidden>
-                <p id="exp4" class="explain" hidden>Japanese "Keigo" describes a system with different levels of
+                <p id="exp4" class="explain" style="color:aliceblue;padding-bottom:2em;" hidden>Japanese "Keigo" describes a system with different levels of
                     formality. It's generally Informal and Formal speech, but there are many levels of nuance in
                     those categories as well. Formal speech often entails appending certain suffixes/honorifics to a
                     person's name, and the name you refer to people by is their last name. In informal speech you'd
@@ -104,12 +112,13 @@
                     that you're treating them like a stranger and they'll feel distant.
                 </p>
 
-                <h1 class="listPoint">Writing System(s)</h1>
+                <div class="txtBox" style="margin-left:4.2vw;margin-bottom:-6.8vw;width:60vw;height:7vh;border-radius:5px;"></div>
+                <h1 class="listPoint"><span>Writing System(s)<h1 class="jp"><span>表記法</span></h1></span></h1>
                 <p class="ENlist">Alphabet</p>
                 <p class="JPlist">Hiragana, Katakana, Kanji, Romaji</p>
                 <h1 id="ex5" class="explain" onmousedown="showEx()">+</h1>
                 <img id="cAna" class="chart" src="images/site/_ana.png" alt="Hiragana/Katakana chart" hidden>
-                <p id="exp5" class="explain" hidden>Technicially for comparison's sake, romaji refers to the alphabet
+                <p id="exp5" class="explain" style="color:aliceblue;padding-bottom:2em;" hidden>Technicially for comparison's sake, romaji refers to the alphabet
                     meaning there's only 3 writing systems different from ours. Romaji isn't used much if at all in
                     everyday conversation, but sees use in media and tourist locations.
                     The first of the Japanese writing systems is hiragana, which is one of the basic writing systems.
@@ -149,7 +158,9 @@
                     readings). For example, water (<span class="jp">水</span>) could be sui (on'yomi)
                     or mizu (kun'yomi). It's complicated when to use which, but a general rule of thumb is if the kanji
                     is alone,
-                    you use kun'yomi, and if it's next to other kanji, you use on'yomi.
+                    you use kun'yomi, and if it's next to other kanji, you use on'yomi. One last thing to keep in mind
+                    is that not every word with associated kanji uses it. There are many terms that used to be written
+                    with kanji that are now written in hiragana.
                 </p>
 
     </body>
